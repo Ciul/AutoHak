@@ -19,7 +19,7 @@
 	
 	<!--<icon src="assets/img/icono.png" gap:role="default" />-->
 	
-	<preference name="orientation" value="portrait" />
+	<!--<preference name="orientation" value="portrait" />-->
 	<preference name="fullscreen" value="false" />
 	<gap:splash src="assets/img/splash.png" />
 	
