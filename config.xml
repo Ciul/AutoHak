@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "co.com.autohak.autohak"
+        versionCode="10" 
+        version   = "0.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>AutoHak</name>
+
+    <description>
+        Easy management of AutoHak local garage business for my brother.
+    </description>
+
+    <author href="http://autohak.com.co" email="luiscarlosjayk@gmail.com">
+        Luis Carlos Osorio Jayk
+    </author>
+
+</widget>
