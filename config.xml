@@ -12,9 +12,20 @@
     <description>
         Easy management of AutoHak local garage business for my brother.
     </description>
-
-    <author href="http://autohak.com.co" email="luiscarlosjayk@gmail.com">
+    
+	<author href="http://autohak.com.co" email="luiscarlosjayk@gmail.com">
         Luis Carlos Osorio Jayk
     </author>
+	
+	<!--<icon src="assets/img/icono.png" gap:role="default" />-->
+	
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
+	<!--<gap:splash src="assets/img/splash.png" />-->
+	
+	<gap:platform>
+		<gap:platform name="android" />
+	</gap:platform>
+	
 
 </widget>
