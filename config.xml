@@ -17,11 +17,11 @@
         Luis Carlos Osorio Jayk
     </author>
 	
-	<!--<icon src="assets/img/icono.png" gap:role="default" />-->
-	
-	<!--<preference name="orientation" value="portrait" />-->
-	<preference name="fullscreen" value="false" />
+	<icon src="assets/img/icono.png" gap:role="default" />
 	<gap:splash src="assets/img/splash.png" />
+	
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
 	
 	<gap:platform>
 		<gap:platform name="android" />
