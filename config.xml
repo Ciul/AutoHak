@@ -17,7 +17,7 @@
         Luis Carlos Osorio Jayk
     </author>
 	
-	<icon src="assets/img/icono.png" gap:role="default" />
+	<icon src="assets/img/icon.png" gap:role="default" />
 	<gap:splash src="assets/img/splash.png" />
 	
 	<preference name="orientation" value="portrait" />
