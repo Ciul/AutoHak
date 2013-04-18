@@ -21,7 +21,7 @@
 	
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="false" />
-	<!--<gap:splash src="assets/img/splash.png" />-->
+	<gap:splash src="assets/img/splash.png" />
 	
 	<gap:platform>
 		<gap:platform name="android" />
