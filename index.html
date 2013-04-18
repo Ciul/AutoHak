@@ -8,19 +8,26 @@
 		<meta charset="utf-8" />
 
 		<!-- Stylesheets -->
-
+			<!-- Moobile -->
+			<link rel="stylesheet" href="assets/css/moobile/moobile.css" />
+			<link rel="stylesheet" href="assets/css/moobile/moobile.android.css" />
+			<link rel="stylesheet" href="assets/css/moobile/app.css" />
+			
 		<!-- Scripts -->
 			<!-- PhoneGap -->
 			<script type="text/javascript" src="phonegap.js"></script>
 			<!-- MooTools -->
-			<script type="text/javascript" src="assets/js/mootools/mootools-core.js"></script>
-			<script type="text/javascript" src="assets/js/mootools/mootools-more.js"></script>
+			<script type="text/javascript" src="assets/js/mootools/mootools-core.min.js"></script>
+			<script type="text/javascript" src="assets/js/mootools/mootools-more.min.js"></script>
 			<!-- jQuery -->
 			<script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
 			<script type="text/javascript">
 				$.noConflict();
 			</script>
-		
+			<!-- Moobile -->
+			<script type="text/javascript" src="assets/js/libs/moobile-0.2.1.js"></script>
+			<script type="text/javascript" src="assets/js/app.js"></script>
+			
 		<script type="text/javascript">
 			function onBodyLoad() {
 				document.addEventListener('deviceready', onDeviceReady, false);
@@ -28,7 +35,8 @@
 			
 			function onDeviceReady() {
 				// do your thing;
-				//navigator.notification.alert("Phonegap is working.");
+				var rootViewController = new HelloWorldViewController();
+				new Moobile.WindowController().setRootViewController(rootViewController);
 			}
 		</script>
 	</head>
