@@ -56,7 +56,7 @@ ViewController.Home = new Class({
 	},
 	
 	onAddButtonTap: function() {
-		//this.getViewControllerStack().pushViewController(new ViewControllerAddSvice(), new Moobile.ViewTransition.Slide);
+		this.getViewControllerStack().pushViewController(new ViewControllerAddSvice(), new Moobile.ViewTransition.Slide);
 	},
 	
 	onListItemSelect: function(listItem) {
@@ -112,9 +112,9 @@ window.ViewControllerAddSvice = new Class({
 		// this.backButton.removeEvent('tap', this.bound('onBackButtonTap'));
 		// this.saveButton.removeEvent('tap', this.bound('onSaveButtonTap'));
 		
-		// this.navigationBar = null;
-		// this.backButton = null;
-		// this.saveButton = null;
+		this.navigationBar = null;
+		this.backButton = null;
+		this.saveButton = null;
 		
 		this.parent();
     },

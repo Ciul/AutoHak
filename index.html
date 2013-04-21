@@ -43,12 +43,9 @@
 			}
 			
 			function onDeviceReady() {
-				//var rootViewController = new Moobile.ViewControllerStack();
-				//new Moobile.WindowController().setRootViewController(rootViewController);
-				//rootViewController.pushViewController(new ViewController.Home);
-				
-				var rootViewController = new ViewController.Home();
+				var rootViewController = new Moobile.ViewControllerStack();
 				new Moobile.WindowController().setRootViewController(rootViewController);
+				rootViewController.pushViewController(new ViewController.Home);
 			}
 		</script>
 	</head>
