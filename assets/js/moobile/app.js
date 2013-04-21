@@ -56,7 +56,6 @@ ViewController.Home = new Class({
 	},
 	
 	onAddButtonTap: function() {
-		alert("New Service");
 		this.getViewControllerStack().pushViewController(new ViewControllerAddSvice, new Moobile.ViewTransition.Slide);
 	},
 	
@@ -85,7 +84,7 @@ provides:
 
 ...
 */
-var ViewControllerAddSvice = new Class({
+window.ViewControllerAddSvice = new Class({
 
     Extends: Moobile.ViewController,
 	
@@ -95,10 +94,11 @@ var ViewControllerAddSvice = new Class({
 	
 	loadView: function() {
 		alert("ViewControllerAddService Loading");
-		this.view = Moobile.ScrollView.at('../../../templates/views/add-service-view.html');
+		this.view = Moobile.ScrollView.at('templates/views/add-service-view.html');
 	},
 	
     viewDidLoad: function() {
+		alet("viewDidLoad runned");
         // this.navigationBar		= this.view.getChildComponent('navigation-bar');
 		// var navigationBarItem	= this.navigationBar.getItem();
 		// this.backButton	= navigationBarItem.getButton('button-back');
@@ -106,7 +106,6 @@ var ViewControllerAddSvice = new Class({
 		
 		// this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
 		// this.saveButton.addEvent('tap', this.bound('onSaveButtonTap'));
-		alet("viewDidLoad runned");
     },
 
     destroy: function() {
