@@ -99,9 +99,9 @@ window.ViewControllerAddSvice = new Class({
 	
     viewDidLoad: function() {
 		alert("viewDidLoad runned");
-        // this.navigationBar		= this.view.getChildComponent('navigation-bar');
-		// var navigationBarItem	= this.navigationBar.getItem();
-		// this.backButton	= navigationBarItem.getButton('button-back');
+        this.navigationBar		= this.view.getChildComponent('navigation-bar');
+		var navigationBarItem	= this.navigationBar.getItem();
+		this.backButton	= navigationBarItem.getButton('button-back');
 		// this.saveButton = this.view.getChildComponent('button-save');
 		
 		// this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
@@ -109,7 +109,7 @@ window.ViewControllerAddSvice = new Class({
     },
 
     destroy: function() {
-		// this.backButton.removeEvent('tap', this.bound('onBackButtonTap'));
+		this.backButton.removeEvent('tap', this.bound('onBackButtonTap'));
 		// this.saveButton.removeEvent('tap', this.bound('onSaveButtonTap'));
 		
 		this.navigationBar = null;
