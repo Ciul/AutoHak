@@ -56,6 +56,7 @@ ViewController.Home = new Class({
 	},
 	
 	onAddButtonTap: function() {
+		alert("New Service");
 		this.getViewControllerStack().pushViewController(new ViewControllerAddSvice, new Moobile.ViewTransition.Slide);
 	},
 	
