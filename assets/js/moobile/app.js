@@ -94,6 +94,7 @@ var ViewControllerAddSvice = new Class({
 	saveButton:		null,
 	
 	loadView: function() {
+		alert("ViewControllerAddService Loading");
 		this.view = Moobile.ScrollView.at('templates/views/add-service-view.html');
 	},
 	
