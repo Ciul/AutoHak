@@ -98,7 +98,7 @@ window.ViewControllerAddSvice = new Class({
 	},
 	
     viewDidLoad: function() {
-		alet("viewDidLoad runned");
+		alert("viewDidLoad runned");
         // this.navigationBar		= this.view.getChildComponent('navigation-bar');
 		// var navigationBarItem	= this.navigationBar.getItem();
 		// this.backButton	= navigationBarItem.getButton('button-back');

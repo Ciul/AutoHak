@@ -21,9 +21,9 @@
     </author>
 	
 	<!-- Icon -->
-	<icon src="assets/img/icon.png" gap:role="default" />
+	<icon src="img/icon.png" gap:role="default" />
 	<!-- Slash Sreen -->
-	<gap:splash src="assets/img/splash.png" />
+	<gap:splash src="img/splash.png" />
 	
 	<!-- Access -->
 	<access origin="http://luiscarlosjayk.com" subdomains="true" />
