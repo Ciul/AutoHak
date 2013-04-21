@@ -56,7 +56,7 @@ ViewController.Home = new Class({
 	},
 	
 	onAddButtonTap: function() {
-		this.getViewControllerStack().pushViewController(new ViewControllerAddSvice, new Moobile.ViewTransition.Slide);
+		this.getViewControllerStack().pushViewController(new ViewControllerAddSvice(), new Moobile.ViewTransition.Slide);
 	},
 	
 	onListItemSelect: function(listItem) {
