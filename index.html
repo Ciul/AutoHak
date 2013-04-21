@@ -14,6 +14,12 @@
 			<!-- Moobile Custom Styles -->
 			<link rel="stylesheet" href="assets/css/moobile/app.css" />
 			
+			<!-- Icomoon -->
+			<link rel="stylesheet" href="assets/css/icomoon/style.css" />
+			
+			<!-- Custom Styles -->
+			<link rel="stylesheet" href="assets/css/moobile/app.css" />
+			
 		<!-- Scripts -->
 			<!-- PhoneGap -->
 			<script type="text/javascript" src="phonegap.js"></script>
@@ -29,6 +35,7 @@
 			<script type="text/javascript" src="assets/js/moobile/libs/moobile-0.2.1.js"></script>
 			<!-- Moobile Custom App -->
 			<script type="text/javascript" src="assets/js/moobile/app.js"></script>
+			<script type="text/javascript" src="assets/js/reader.js"></script>
 			
 		<script type="text/javascript">
 			function onBodyLoad() {
@@ -36,9 +43,9 @@
 			}
 			
 			function onDeviceReady() {
-				// do your thing;
-				var rootViewController = new HelloWorldViewController();
+				var rootViewController = new Moobile.ViewControllerStack();
 				new Moobile.WindowController().setRootViewController(rootViewController);
+				rootViewController.pushViewController(new ViewController.Home);
 			}
 		</script>
 	</head>

@@ -33,6 +33,9 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="false" />
 	
+	<!-- Permissions -->
+	<plugin name="File" value="org.apache.cordova.FileUtils" />
+
 	<!-- Platforms -->
 	<gap:platform>
 		<gap:platform name="android" />
