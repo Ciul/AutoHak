@@ -104,7 +104,7 @@ window.ViewControllerAddSvice = new Class({
 		this.backButton	= navigationBarItem.getButton('button-back');
 		// this.saveButton = this.view.getChildComponent('button-save');
 		
-		// this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
+		this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
 		// this.saveButton.addEvent('tap', this.bound('onSaveButtonTap'));
     },
 
