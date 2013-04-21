@@ -43,6 +43,8 @@
 			}
 			
 			function onDeviceReady() {
+				navigator.splashscreen.hide(); // Dismiss Splashscreen
+				
 				var rootViewController = new Moobile.ViewControllerStack();
 				new Moobile.WindowController().setRootViewController(rootViewController);
 				rootViewController.pushViewController(new ViewController.Home);
