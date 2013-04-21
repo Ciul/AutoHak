@@ -99,23 +99,23 @@ var ViewControllerAddSvice = new Class({
 	},
 	
     viewDidLoad: function() {
-        this.navigationBar		= this.view.getChildComponent('navigation-bar');
-		var navigationBarItem	= this.navigationBar.getItem();
-		this.backButton	= navigationBarItem.getButton('button-back');
-		this.saveButton = this.view.getChildComponent('button-save');
+        // this.navigationBar		= this.view.getChildComponent('navigation-bar');
+		// var navigationBarItem	= this.navigationBar.getItem();
+		// this.backButton	= navigationBarItem.getButton('button-back');
+		// this.saveButton = this.view.getChildComponent('button-save');
 		
-		this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
-		this.saveButton.addEvent('tap', this.bound('onSaveButtonTap'));
-		
+		// this.backButton.addEvent('tap', this.bound('onBackButtonTap'));
+		// this.saveButton.addEvent('tap', this.bound('onSaveButtonTap'));
+		alet("viewDidLoad runned");
     },
 
     destroy: function() {
-		this.backButton.removeEvent('tap', this.bound('onBackButtonTap'));
-		this.saveButton.removeEvent('tap', this.bound('onSaveButtonTap'));
+		// this.backButton.removeEvent('tap', this.bound('onBackButtonTap'));
+		// this.saveButton.removeEvent('tap', this.bound('onSaveButtonTap'));
 		
-		this.navigationBar = null;
-		this.backButton = null;
-		this.saveButton = null;
+		// this.navigationBar = null;
+		// this.backButton = null;
+		// this.saveButton = null;
 		
 		this.parent();
     },
